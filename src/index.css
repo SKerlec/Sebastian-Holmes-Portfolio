@@ -1,3 +1,7 @@
+* {
+  background-color: rgb(223, 223, 223);
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,4 +14,95 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.project-card {
+  margin: 20px;
+}
+
+.project-card-img {
+  border-radius: 10px;
+  width: 300px;
+  height: 480px;
+  box-shadow: 0 0 4px 2px #ccc;
+}
+
+.project-card-title {
+  font-size: 1.25rem;
+  margin: 0;
+}
+
+.project-card-info {
+  margin: 10px;
+  min-height: 100px;
+  max-width: 300px;
+}
+
+.project-card-link {
+  font-size: .75rem;
+}
+
+.project-card-description {
+  font-size: .9rem;
+  margin: 0;
+}
+
+.carousel-instructions {
+  text-align: center;
+}
+
+hr {
+  width: 50%;
+}
+
+.home-section-title {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 2rem;
+}
+
+.about-me-content {
+  margin: auto auto 50px auto;
+  font-size: 1.5rem;
+  font-weight: lighter;
+}
+
+.more-about-link {
+  margin: auto;
+  font-size: .8rem;
+}
+
+.more-projects-link {
+  margin: auto auto auto 25%;
+  font-size: .8rem;
+}
+
+.home-preview {
+  margin: 0;
+  padding: 10px;
+}
+
+.about-me-preview {
+  font-size: 1.25rem;
+  width: 50%;
+}
+
+.home-preview {
+  margin: 25px auto 25px auto;
+}
+
+.success-msg {
+  color: #57A773;
+  padding: 10px 15px;
+}
+
+.err-msg {
+  color: red;
+  padding: 10px 15px;
+}
+
+.hero {
+  background-image: url('C:\Users\skerl\projects\sebastian-holmes-portfolio\src\assets\portfolioHeroBg.jpg');
+  opacity: .5;
+  height: 300px;;
 }
