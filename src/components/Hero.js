@@ -1,8 +1,6 @@
 import React from 'react';
 import { Jumbotron, Container, Row, Col } from 'react-bootstrap';
 
-import portfolioHeroBg from '../assets/portfolioHeroBg.jpg'
-
 function Hero(props) {
     return (
         <Jumbotron className=' bg-cover text-white p-0 hero' fluid={true}>
