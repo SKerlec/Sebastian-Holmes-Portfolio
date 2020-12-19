@@ -37,7 +37,7 @@ class ContactPage extends Component {
             disabled: true
         })
 
-        axios.post('http://localhost:3030/api/email', this.state)
+        axios.post('/api/email', this.state)
             .then(res => {
                 if(res.data.succes) {
                     this.setState({
