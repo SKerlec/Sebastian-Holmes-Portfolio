@@ -57,43 +57,7 @@ class App extends Component {
           liveLink: '',
           repoLink: '',
           selected: false
-        },
-        { 
-          id: 2,
-          title: 'Game Finder',
-          description: 'Retrieve detailed information on your favorite video games.',
-          imgSrc: gameFinderImg,
-          liveLink: '',
-          repoLink: '',
-          selected: false
-        },
-        { 
-          id: 3,
-          title: 'Louisiana Quiz',
-          description: 'Test your knowledge of Louisiana culture, one question at a time.',
-          imgSrc: louisianaQuizAppImg,
-          liveLink: '',
-          repoLink: '',
-          selected: false
-        },
-        { 
-          id: 4,
-          title: 'Game Finder',
-          description: 'Retrieve detailed information on your favorite video games.',
-          imgSrc: gameFinderImg,
-          liveLink: '',
-          repoLink: '',
-          selected: false
-        },
-        { 
-          id: 5,
-          title: 'Louisiana Quiz',
-          description: 'Test your knowledge of Louisiana culture, one question at a time.',
-          imgSrc: louisianaQuizAppImg,
-          liveLink: '',
-          repoLink: '',
-          selected: false
-        },
+        }
       ]
     }
   }
