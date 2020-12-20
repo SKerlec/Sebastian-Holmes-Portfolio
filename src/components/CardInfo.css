@@ -1,22 +1,35 @@
 .project-card-info {
-    width: 100px;
+    width: 100%;
     font-size: .75rem;
+    padding: 0 2.5px;
+    text-align: left;
+}
+
+.card-info-container {
+    text-align: center;
+    width: 100px;
+    margin: auto;
 }
 
 .project-card-title {
     font-weight: bold;
-    font-size: .9rem;
+    font-size: .8rem;
 }
 
 .project-card-link {
-    font-size: .7rem;
+    font-size: .6rem;
 }
 
 @media screen and (min-width: 575px) {
 
+    .card-info-container {
+        margin: 0;
+    }
+
     .project-card-info {
         width: 150px;
-        font-size: .85rem;
+        font-size: .8rem;
+        padding:  0 25px;
     }
     
     .project-card-title {
@@ -25,12 +38,31 @@
     }
     
     .project-card-link {
-        font-size: .8rem;
+        font-size: .75rem;
     }
 
 }
 
-@media screen and (min-width: 950px) {
+@media screen and (min-width: 775px) {
+
+    .project-card-info {
+        width: 200px;
+        font-size: 1rem;
+        padding: 0 15px;
+    }
+    
+    .project-card-title {
+        font-weight: bold;
+        font-size: 1.25rem;
+    }
+    
+    .project-card-link {
+        font-size: .9rem;
+    }
+
+}
+
+@media screen and (min-width: 1200px) {
 
     .project-card-info {
         width: 300px;
@@ -39,7 +71,7 @@
     
     .project-card-title {
         font-weight: bold;
-        font-size: 1.25rem;
+        font-size: 1.5rem;
     }
     
     .project-card-link {

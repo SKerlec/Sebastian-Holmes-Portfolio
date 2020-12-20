@@ -127,6 +127,7 @@ class App extends Component {
           <Route path='/projects' render={() => <ProjectsPage projectsData={this.state.projectsData} makeCards={this.makeItems} title={this.state.projects.title} />} />
           {/* <Route path='/contact' render={() => <ContactPage title={this.state.contact.title} />} /> */}
 
+          <hr />
           <Footer />
 
         </div>

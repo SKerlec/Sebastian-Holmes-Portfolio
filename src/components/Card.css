@@ -12,8 +12,10 @@
 
 @media screen and (min-width: 575px) {
 
-    .project-card {
+    .project-card-img {
         margin: 10px;
+        width: 150px;
+        text-align: center;
     }
 
 }
@@ -34,7 +36,7 @@
 @media screen and (min-width: 1200px) {
 
     .project-card {
-        margin: 15px;
+        margin: 20px;
     }
 
     .project-card-img {
