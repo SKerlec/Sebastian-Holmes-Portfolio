@@ -1,0 +1,26 @@
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: solid black .5px;
+    padding: 5px 0 0 0;
+    font-size: .8rem;
+    margin-top: 15px;
+}
+
+.footer-name {
+    display: none;
+}
+
+@media screen and (min-width: 1000px) {
+
+.footer {
+    justify-content: space-between;
+    padding: 5px 5px 0 5px;
+}
+
+.footer-name {
+    display: inherit;
+}
+
+}

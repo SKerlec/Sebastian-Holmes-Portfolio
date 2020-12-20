@@ -1,18 +1,19 @@
 import React from 'react';
-import { Container, Row } from 'react-bootstrap';
 
 import Hero from '../components/Hero';
+import Content from '../components/Content';
+import './ProjectsPage.css';
+import { Container } from 'react-bootstrap';
 
 function ProjectsPage(props) {
     return (
         <div>
             <Hero title={props.title} />
-            <Container fluid={true}>
-                
-                <Row className='justify-content-around ml-5 mr-5 px-5'>
+            <Content>
+                <Container className='projects-container'>
                     {props.makeCards(props.projectsData)}
-                </Row>
-            </Container>
+                </Container>
+            </Content>
         </div>
     )
 }

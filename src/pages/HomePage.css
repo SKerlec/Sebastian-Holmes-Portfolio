@@ -1,0 +1,63 @@
+.home-page {
+    width: 100%;
+    margin: 0;
+}
+
+.home-cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 50px;
+}
+
+.home-section-title, .carousel-instructions {
+    text-align: center;
+    width: 50%;
+    margin: auto;
+}
+
+.home-preview {
+    text-align: center;
+}
+
+.about-me-preview {
+    width: 50%;
+    margin: auto;
+}
+
+.more-link {
+    font-size: .8rem;
+}
+
+.home-projects-title {
+    margin-top: 50px;
+}
+
+.home-section-title {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+@media screen and (min-width: 450px) {
+
+    .home-cards {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0 50px;
+    }
+
+    .about-me-preview {
+        font-size: 1.2rem;
+        font-weight: lighter;
+    }
+
+}
+
+@media screen and (min-width: 1000px) {
+
+    .projects-preview {
+        margin: 35px 100px;
+    }
+
+}

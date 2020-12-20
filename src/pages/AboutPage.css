@@ -1,0 +1,15 @@
+.about-me-content {
+    font-size: 1rem;
+    width: 80%;
+    margin: 25px auto;
+}
+
+@media screen and (min-width: 1000px) {
+
+    .about-me-content {
+        font-size: 1.5rem;
+        font-weight: lighter;
+        width: 50%;
+    }
+
+}

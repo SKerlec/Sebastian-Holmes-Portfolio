@@ -1,0 +1,49 @@
+.project-card-info {
+    width: 100px;
+    font-size: .75rem;
+}
+
+.project-card-title {
+    font-weight: bold;
+    font-size: .9rem;
+}
+
+.project-card-link {
+    font-size: .7rem;
+}
+
+@media screen and (min-width: 575px) {
+
+    .project-card-info {
+        width: 150px;
+        font-size: .85rem;
+    }
+    
+    .project-card-title {
+        font-weight: bold;
+        font-size: 1rem;
+    }
+    
+    .project-card-link {
+        font-size: .8rem;
+    }
+
+}
+
+@media screen and (min-width: 950px) {
+
+    .project-card-info {
+        width: 300px;
+        font-size: 1rem;
+    }
+    
+    .project-card-title {
+        font-weight: bold;
+        font-size: 1.25rem;
+    }
+    
+    .project-card-link {
+        font-size: .9rem;
+    }
+
+}

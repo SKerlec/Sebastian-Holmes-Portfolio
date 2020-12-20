@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
-import { Container, Nav, Navbar } from 'react-bootstrap';
+import { Nav, Navbar } from 'react-bootstrap';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 
 import Footer from './components/Footer';
 import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
 import ProjectsPage from './pages/ProjectsPage';
-import ContactPage from './pages/ContactPage';
+// import ContactPage from './pages/ContactPage';
 import Card from './components/Card';
+import './App.css';
 
 import gameFinderImg from './assets/gameFinderImg.png';
 import louisianaQuizAppImg from './assets/louisianaQuizAppImg.jpg';
@@ -22,7 +23,7 @@ class App extends Component {
         { title: 'Home', path: '/' },
         { title: 'About', path: '/about' },
         { title: 'Projects', path: '/projects' },
-        { title: 'Contact', path: '/contact' }
+        // { title: 'Contact', path: '/contact' }
       ],
       title: 'Sebastian Holmes',
       home: {
@@ -36,9 +37,9 @@ class App extends Component {
       projects: {
         title: 'My Projects'
       },
-      contact: {
-        title: 'Get In Touch!'
-      },
+      // contact: {
+      //   title: 'Get In Touch!'
+      // },
       projectsData: [
         { 
           id: 0,
@@ -65,41 +66,40 @@ class App extends Component {
 
   handleCardClick = (id) => {
 
-    let projects = [...this.state.projectsData];
+    let projectsData = [...this.state.projectsData];
 
-    projects[id].selected = projects[id].selected ? false : true;
+    projectsData[id].selected = projectsData[id].selected ? false : true;
 
-    projects.forEach(item => {
+    projectsData.forEach(item => {
         if(item.id !== id) {
             item.selected = false
         }
     });
 
     this.setState({
-        projects
+        projectsData
     });
 
 }
 
 
-makeHomeItems = (projects) => {  
+  makeHomeItems = (projects) => {  
 
     let amount = 3;
 
-    console.log(amount);
     let carouselCards = projects.filter(item => item.id < amount);
 
     return carouselCards.map(item => {
         return <Card item={item} key={item.id} click={(e => this.handleCardClick(item.id, e))} />
     })
     
-}
+  }
 
-makeItems = (projects) => {
-  return projects.map(item => {
-    return <Card item={item} key={item.id} click={(e => this.handleCardClick(item.id, e))} />
-})
-}
+  makeItems = (projects) => {
+    return projects.map(item => {
+      return <Card item={item} key={item.id} click={(e => this.handleCardClick(item.id, e))} />
+    })
+  }
 
 
 
@@ -107,7 +107,7 @@ makeItems = (projects) => {
 
     return (
       <Router>
-        <Container className='p-0' fluid={true}>
+        <div className='app-container'>
 
           <Navbar className='border-bottom border-secondary' bg='transparent' expand='lg'>
             <Navbar.Brand>Sebastian Holmes</Navbar.Brand>
@@ -117,7 +117,7 @@ makeItems = (projects) => {
                 <Link className='nav-link' to='/'>Home</Link>
                 <Link className='nav-link' to='/about'>About</Link>
                 <Link className='nav-link' to='/projects'>Projects</Link>
-                <Link className='nav-link' to='/contact'>Contact</Link>
+                {/* <Link className='nav-link' to='/contact'>Contact</Link> */}
               </Nav>
             </Navbar.Collapse>
           </Navbar>
@@ -125,11 +125,11 @@ makeItems = (projects) => {
           <Route path='/' exact render={() => <HomePage homeData={this.state} makeHomeCards={this.makeHomeItems} title={this.state.home.title} subtitle={this.state.home.subtitle} phrase={this.state.home.phrase} headerLinks={this.state.headerLinks} />} />
           <Route path='/about' render={() => <AboutPage title={this.state.about.title} />} />
           <Route path='/projects' render={() => <ProjectsPage projectsData={this.state.projectsData} makeCards={this.makeItems} title={this.state.projects.title} />} />
-          <Route path='/contact' render={() => <ContactPage title={this.state.contact.title} />} />
+          {/* <Route path='/contact' render={() => <ContactPage title={this.state.contact.title} />} /> */}
 
           <Footer />
 
-        </Container>
+        </div>
       </Router>
 
 

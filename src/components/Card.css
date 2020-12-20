@@ -1,0 +1,45 @@
+.project-card {
+    margin: 5px;
+}
+
+.project-card-img {
+    border-radius: 10px;
+    width: 100px;
+    height: 160px;
+    box-shadow: 0 0 10px rgb(126, 126, 126);
+}
+
+
+@media screen and (min-width: 575px) {
+
+    .project-card {
+        margin: 10px;
+    }
+
+}
+
+@media screen and (min-width: 775px) {
+
+    .project-card {
+        margin: 15px;
+    }
+    
+    .project-card-img {
+        width: 200px;
+        height: 320px;
+    }
+
+}
+
+@media screen and (min-width: 1200px) {
+
+    .project-card {
+        margin: 15px;
+    }
+
+    .project-card-img {
+        width: 300px;
+        height: 480px;
+    }
+
+}

@@ -1,0 +1,92 @@
+.hero {
+    background-image: url('https://leumiusa.com/wp-content/uploads/2015/10/banner-industry-tech.jpg');
+    background-size: cover;
+    background-position: center center;
+    opacity: .5;
+    padding: 75px 40px;
+    height: 300px;
+    width: 100%;
+    margin: 0;
+}
+
+.hero-content {
+    background: transparent;
+    color: white;
+    text-align: left;
+    text-shadow: 0 5px 5px black;
+    width: 100%;
+    margin: 0;
+}
+
+.hero-content h1 {
+    font-weight: bold;
+    font-size: 2rem;
+    background: transparent;
+}
+
+.hero-content h3 {
+    font-size: 1.5rem;
+    background: transparent;
+}
+
+.hero-content h4 {
+    font-weight: lighter;
+    font-size: 1rem;
+    background: transparent;
+}
+
+@media screen and (min-width: 575px) {
+
+    .hero {
+        padding: 50px;
+    }
+    
+    .hero-content h1 {
+        font-size: 3rem;
+    }
+    
+    .hero-content h3 {
+        font-size: 2.25rem;
+    }
+    
+    .hero-content h4 {
+        font-size: 1.25rem;
+    }
+
+}
+
+@media screen and (min-width: 700px) {
+    
+    .hero-content h1 {
+        font-size: 3.5rem;
+    }
+    
+    .hero-content h3 {
+        font-size: 2.5rem;
+    }
+    
+    .hero-content h4 {
+        font-size: 1.5rem;
+    }
+
+}
+
+@media screen and (min-width: 1000px) {
+
+    .hero {
+        padding: 50px 100px;
+    }
+    
+    .hero-content h1 {
+        font-size: 4rem;
+    }
+    
+    .hero-content h3 {
+        font-size: 3rem;
+    }
+    
+    .hero-content h4 {
+        font-size: 1.75rem;
+    }
+
+}
