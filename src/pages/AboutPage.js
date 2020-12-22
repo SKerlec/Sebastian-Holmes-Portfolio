@@ -8,6 +8,7 @@ function AboutPage(props) {
     return (
         <div>
             <Hero title={props.title} />
+            
             <Content>
                 <p className='about-me-content'>
                     I am a frontend web developer proficient in jQuery and React. I have a year of tech experience, within which I 

@@ -46,8 +46,8 @@ class App extends Component {
           title: 'Game Finder',
           description: 'Retrieve detailed information on your favorite video games.',
           imgSrc: gameFinderImg,
-          liveLink: '',
-          repoLink: '',
+          liveLink: 'https://skerlec.github.io/game-finder/',
+          repoLink: 'https://github.com/SKerlec/game-finder.git',
           selected: false
         },
         { 
@@ -55,8 +55,8 @@ class App extends Component {
           title: 'Louisiana Quiz',
           description: 'Test your knowledge of Louisiana culture, one question at a time.',
           imgSrc: louisianaQuizAppImg,
-          liveLink: '',
-          repoLink: '',
+          liveLink: 'https://skerlec.github.io/Quiz-App-Project/',
+          repoLink: 'https://github.com/SKerlec/Quiz-App-Project.git',
           selected: false
         }
       ]
@@ -121,13 +121,11 @@ class App extends Component {
               </Nav>
             </Navbar.Collapse>
           </Navbar>
-
           <Route path='/' exact render={() => <HomePage homeData={this.state} makeHomeCards={this.makeHomeItems} title={this.state.home.title} subtitle={this.state.home.subtitle} phrase={this.state.home.phrase} headerLinks={this.state.headerLinks} />} />
           <Route path='/about' render={() => <AboutPage title={this.state.about.title} />} />
           <Route path='/projects' render={() => <ProjectsPage projectsData={this.state.projectsData} makeCards={this.makeItems} title={this.state.projects.title} />} />
           {/* <Route path='/contact' render={() => <ContactPage title={this.state.contact.title} />} /> */}
 
-          <hr />
           <Footer />
 
         </div>
